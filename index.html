@@ -1,27 +1,34 @@
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head id="Head1" runat="server">
-    <title>
-    </title>
-<script type="text/javascript" language="javascript">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="icon" href="icon.ico">
+    <script type="text/javascript" language="javascript">
 
-    function Calculate() 
-    {
-        var aa = document.getElementById('a');  
-        var bb = document.getElementById('b');  
-        document.getElementById('c').value=(parseFloat(aa.value) * parseFloat(bb.value));
-    }
-</script>
-
+        function Calculate() 
+        {
+            var aa = document.getElementById('a');  
+            var bb = document.getElementById('b');  
+            document.getElementById('c').value=(parseFloat(aa.value) * parseFloat(bb.value));
+        }
+    </script>
 </head>
 <body>
-<div id="main">
-    <input ID="a" runat="server"></input>
-    <br /><br />
-    <input ID="b" runat="server"></input>
-    <br /><br />
-    <input ID="c" runat="server"></input>
-    <br /><br />
-    <input onclick="Calculate();" id="Button1" type="button" value="button" />
-</div>
+    <div id="main">
+        <h1>calculator</h1>
+        <label for="">1st number</label>
+        <input ID="a" runat="server"></input>
+        <br /><br />
+        <label for="">2nd number</label>
+        <input ID="b" runat="server"></input>
+        <br /><br />
+        <label for="">result</label>
+        <input ID="c" runat="server"></input>
+        <br /><br />
+        <input onclick="Calculate();" id="Button1" type="button" value="button" />
+    </div>
 </body>
 </html>
