@@ -1,0 +1,27 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>
+    </title>
+<script type="text/javascript" language="javascript">
+
+    function Calculate() 
+    {
+        var aa = document.getElementById('a');  
+        var bb = document.getElementById('b');  
+        document.getElementById('c').value=(parseFloat(aa.value) * parseFloat(bb.value));
+    }
+</script>
+
+</head>
+<body>
+<div id="main">
+    <input ID="a" runat="server"></input>
+    <br /><br />
+    <input ID="b" runat="server"></input>
+    <br /><br />
+    <input ID="c" runat="server"></input>
+    <br /><br />
+    <input onclick="Calculate();" id="Button1" type="button" value="button" />
+</div>
+</body>
+</html>
