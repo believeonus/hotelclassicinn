@@ -1,777 +1,489 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hotel Classic Inn</title>
-  <link rel="shortcut icon" href="Images/icon.png" type="icon">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous"
-    referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-</head>
-
-<body>
-
-
-  <header>
-    <div class="content flex_space">
-      <div class="logo">
-        <img src="Images/logo.png" alt="">
-      </div>
-      <div class="navlinks">
-        <ul id="menulist">
-          <li><a href="#home">home</a> </li>
-          <li><a href="#about">about</a> </li>
-          <li><a href="#rooms">rooms</a> </li>
-          <li><a href="#pages">pages</a> </li>
-          <li><a href="#news">news</a> </li>
-          <li><a href="#contact">contact</a> </li>
-          <li> <i class="fa fa-search"></i> </li>
-          <li> <button class="primary-btn">BOOK NOW</button> </li>
-          <li><a href="#apply">Applicable Later</a> </li>
-        </ul>
-        <span class="fa fa-bars" onclick="menutoggle()"></span>
-      </div>
-    </div>
-  </header>
-
-
-  <script>
-    var menulist = document.getElementById('menulist');
-    menulist.style.maxHeight = "0px";
-
-    function menutoggle() {
-      if (menulist.style.maxHeight == "0px") {
-        menulist.style.maxHeight = "100vh";
-      } else {
-        menulist.style.maxHeight = "0px";
-      }
-    }
-  </script>
-
-
-  <section class="home">
-    <div class="content">
-      <div class="owl-carousel owl-theme">
-        <div class="item">
-          <img src="Images/banner-1.jpg" alt="">
-          <div class="text">
-            <h1>Spend Your Holiday</h1>
-            <p>India Bhutan Gate</p>
-            <p>At Hotel Classic Inn adjacent to our neighbouring Country Bhutan.Both Bhutan Gates are just 5 minutes walking distance from our Hotel.
-            </p>
-            <div class="flex">
-              <button class="primary-btn">READ MORE</button>
-              <button class="secondary-btn">CONTACT US</button>
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="image/icon.png" type="image/png">
+        <title>Hotel Classic Inn</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="vendors/linericon/style.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.css">
+        <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+        <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+        <!-- main css -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+    </head>
+    <body>
+        <!--================Header Area =================-->
+        <header class="header_area">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <a class="navbar-brand logo_h" href="index.html"><img src="image/Logo.png" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav menu_nav ml-auto">
+                            <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li> 
+                            <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Accomodation</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+                            <li class="nav-item submenu dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Blog Details</a></li>
+                                </ul>
+                            </li> 
+                            <li class="nav-item"><a class="nav-link" href="#">Elemests</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                        </ul>
+                    </div> 
+                </nav>
             </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="Images/banner-2.jpg" alt="">
-          <div class="text">
-            <h1>Spend Your Holiday</h1>
-            <p>Tea Garden View of Jaigaon</p>
-            <p>At Hotel Classic Inn adjacent to our neighbouring Country Bhutan.Both Bhutan Gates are just 5 minutes walking distance from our Hotel.
-            </p>
-            <div class="flex">
-              <button class="primary-btn">READ MORE</button>
-              <button class="secondary-btn">CONTACT US</button>
+        </header>
+        <!--================Header Area =================-->
+        
+        <!--================Banner Area =================-->
+        <section class="banner_area">
+            <div class="booking_table d_flex align-items-center">
+            	<div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
+				<div class="container">
+					<div class="banner_content text-center">
+						<h6>Away from monotonous life</h6>
+						<h2>Relax Your Mind</h2>
+						<p>If you are looking for a peaceful vaccation don't be confused, visit our place & it is confirmed<br> that you will enjoy the vaccation without any stress.</p>
+						<a href="#" class="btn theme_btn button_hover">Get Started</a>
+					</div>
+				</div>
             </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="Images/banner-3.jpg" alt="">
-          <div class="text">
-            <h1>Spend Your Holiday</h1>
-            <p>Indo Bhutan Boarder Road</p>
-            <p>At Hotel Classic Inn adjacent to our neighbouring Country Bhutan.Both Bhutan Gates are just 5 minutes walking distance from our Hotel.
-            </p>
-            <div class="flex">
-              <button class="primary-btn">READ MORE</button>
-              <button class="secondary-btn">CONTACT US</button>
+            <div class="hotel_booking_area position">
+                <div class="container">
+                    <div class="hotel_booking_table">
+                        <div class="col-md-3">
+                            <h2>Book<br> Your Room</h2>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="boking_table">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="book_tabel_item">
+                                            <div class="form-group">
+                                                <div class='input-group date' id='datetimepicker11'>
+                                                    <input type='text' class="form-control" placeholder="Arrival Date"/>
+                                                    <span class="input-group-addon">
+                                                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class='input-group date' id='datetimepicker1'>
+                                                    <input type='text' class="form-control" placeholder="Departure Date"/>
+                                                    <span class="input-group-addon">
+                                                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="book_tabel_item">
+                                            <div class="input-group">
+                                                <select class="wide">
+                                                    <option data-display="Adult">Adult</option>
+                                                    <option value="1">Old</option>
+                                                    <option value="2">Younger</option>
+                                                    <option value="3">Potato</option>
+                                                </select>
+                                            </div>
+                                            <div class="input-group">
+                                                <select class="wide">
+                                                    <option data-display="Child">Child</option>
+                                                    <option value="1">Child</option>
+                                                    <option value="2">Baby</option>
+                                                    <option value="3">Child</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="book_tabel_item">
+                                            <div class="input-group">
+                                                <select class="wide">
+                                                    <option data-display="Child">Number of Rooms</option>
+                                                    <option value="1">Room 01</option>
+                                                    <option value="2">Room 02</option>
+                                                    <option value="3">Room 03</option>
+                                                </select>
+                                            </div>
+                                            <a class="book_now_btn button_hover" href="#">Book Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"
-    referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous"
-    referrerpolicy="no-referrer"></script>
-  <script>
-    $('.owl-carousel').owlCarousel({
-      loop: true,
-      margin: 0,
-      nav: true,
-      dots: false,
-      navText: ["<i class = 'fa fa-chevron-left'></i>", "<i class = 'fa fa-chevron-right'></i>"],
-      responsive: {
-        0: {
-          items: 1
-        },
-        768: {
-          items: 1
-        },
-        600: {
-          items: 1
-        },
-        360: {
-          items: 1
-        },
-        780: {
-          items: 1
-        },
-        1000: {
-          items: 1
-        }
-      }
-    })
-  </script>
-
-
-
-
-  <section class="book">
-    <div class="container flex_space">
-      <div class="text">
-        <h1> <span>Book </span> Your Rooms </h1>
-      </div>
-      <div class="form">
-        <form class="grid">
-          <input type="date" placeholder="Araival Date">
-          <input type="date" placeholder="Departure Date">
-          <input type="number" placeholder="Adults">
-          <input type="number" placeholder="Childern">
-          <input type="submit" value="CHECK AVAILABILITY">
-        </form>
-      </div>
-    </div>
-  </section>
-
-
-
-  <section class="about top">
-    <div class="container flex">
-      <div class="left">
-        <div class="heading">
-          <h1>WELCOME</h1>
-          <h2>Hotel Classic Inn</h2>
-        </div>
-        <p>Hotel Classic Inn at Jaigaon, Jalpaiguri is a reliable name in the hotel industry as their aim is to deliver the best experience to their customers. This has helped them to build up a loyal customer base. They started their journey in 2017 and ever since, they have ensured that the customer remains at the centre of their business operations and philosophy. As they are located exactly at Near Indian Overseas Bank, M G Road, Jaigaon-736182, Jalpaiguri, West Bengal, India, it is easy to locate Hotel Classic Inn on the map.
-           For any kind of assistance or questions, it is best to contact them directly during their business hours.</p>
-        <button class="primary-btn">ABOUT US</button>
-      </div>
-      <div class="right">
-        <img src="Images/imagenotfound.png" alt="">
-      </div>
-    </div>
-  </section>
-
-  <section class="counter top">
-    <div class="container grid">
-      <div class="box">
-        <h1>2500+</h1>
-        <hr>
-        <span>Customer</span>
-      </div>
-      <div class="box">
-        <h1>1250+</h1>
-        <hr>
-        <span>Happy Customer</span>
-      </div>
-      <div class="box">
-        <h1>150+</h1>
-        <hr>
-        <span>Expert Technicians</span>
-      </div>
-      <div class="box">
-        <h1>50+</h1>
-        <hr>
-        <span>Rooms</span>
-      </div>
-    </div>
-  </section>
-
-
-  <section class="rooms">
-    <div class="container top">
-      <div class="heading">
-        <h1>EXPOLRE</h1>
-        <h2>Our Rooms</h2>
-        <p>Images & Status of Rooms with its Interior
-        </p>
-      </div>
-
-      <div class="content mtop">
-        <div class="owl-carousel owl-carousel1 owl-theme">
-          <div class="items">
-            <div class="image">
-              <img src="Images/imagenotfound.png" alt="">
+        </section>
+        <!--================Banner Area =================-->
+        
+        <!--================ Accomodation Area  =================-->
+        <section class="accomodation_area section_gap">
+            <div class="container">
+                <div class="section_title text-center">
+                    <h2 class="title_color">Hotel Accomodation</h2>
+                    <p>We all live in an age that belongs to the young at heart. Life that is becoming extremely fast, </p>
+                </div>
+                <div class="row mb_30">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="accomodation_item text-center">
+                            <div class="hotel_img">
+                                <img src="image/room1.jpg" alt="">
+                                <a href="#" class="btn theme_btn button_hover">Book Now</a>
+                            </div>
+                            <a href="#"><h4 class="sec_h4">Super Luxury Room</h4></a>
+                            <h5>₹3000<small>/night</small></h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="accomodation_item text-center">
+                            <div class="hotel_img">
+                                <img src="image/room2.jpg" alt="">
+                                <a href="#" class="btn theme_btn button_hover">Book Now</a>
+                            </div>
+                            <a href="#"><h4 class="sec_h4">Luxury Room</h4></a>
+                            <h5>₹2500<small>/night</small></h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="accomodation_item text-center">
+                            <div class="hotel_img">
+                                <img src="image/room3.jpg" alt="">
+                                <a href="#" class="btn theme_btn button_hover">Book Now</a>
+                            </div>
+                            <a href="#"><h4 class="sec_h4">Super Delux Room</h4></a>
+                            <h5>₹2000<small>/night</small></h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="accomodation_item text-center">
+                            <div class="hotel_img">
+                                <img src="image/room4.jpg" alt="">
+                                <a href="#" class="btn theme_btn button_hover">Book Now</a>
+                            </div>
+                            <a href="#"><h4 class="sec_h4">Delux Room</h4></a>
+                            <h5>₹1500<small>/night</small></h5>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="text">
-              <h2>Super Luxury Rooms</h2>
-              <div class="rate flex">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-              </div>
-              <p>At Hotel Classic Inn adjacent to our neighbouring Country Bhutan.Both Bhutan Gates are just 5 minutes walking distance from our Hotel.
-              </p>
-              <div class="button flex">
-                <button class="primary-btn">BOOK NOW</button>
-                <h3>₹2000 <span> <br> Per Night </span> </h3>
-              </div>
+        </section>
+        <!--================ Accomodation Area  =================-->
+        
+        <!--================ Facilities Area  =================-->
+        <section class="facilities_area section_gap">
+            <div class="overlay bg-parallax" data-stellar-ratio="0.8" data-stellar-vertical-offset="0" data-background="">  
             </div>
-          </div>
-          <div class="items">
-            <div class="image">
-              <img src="Images/imagenotfound.png" alt="">
+            <div class="container">
+                <div class="section_title text-center">
+                    <h2 class="title_w">Royal Facilities</h2>
+                    <p>Who are in extremely love with eco friendly system.</p>
+                </div>
+                <div class="row mb_30">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="facilities_item">
+                            <h4 class="sec_h4"><i class="lnr lnr-dinner"></i>Restaurant</h4>
+                            <p>To serve good quality of food with some special presentation is our moto.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="facilities_item">
+                            <h4 class="sec_h4"><i class="lnr lnr-bicycle"></i>Sports CLub</h4>
+                            <p>Health is the greatest asset of our life, so we want to achive it at any cost.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="facilities_item">
+                            <h4 class="sec_h4"><i class="lnr lnr-shirt"></i>Swimming Pool</h4>
+                            <p>Swimming helps us a lot to maintain our Health. Clean and purified water is waiting for you.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="facilities_item">
+                            <h4 class="sec_h4"><i class="lnr lnr-car"></i>Rent a Car</h4>
+                            <p>Car on rent is available at your doorstep at an reasonable price.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="facilities_item">
+                            <h4 class="sec_h4"><i class="lnr lnr-construction"></i>Gymnesium</h4>
+                            <p>Now a days Gym is necessary to our day to day life. In every segment we follow that body structure means a lot.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="facilities_item">
+                            <h4 class="sec_h4"><i class="lnr lnr-coffee-cup"></i>Bar</h4>
+                            <p>We have a well equiped Bar.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="text">
-              <h2>Luxury Rooms</h2>
-              <div class="rate flex">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-              </div>
-              <p>At Hotel Classic Inn adjacent to our neighbouring Country Bhutan.Both Bhutan Gates are just 5 minutes walking distance from our Hotel.
-              </p>
-              <div class="button flex">
-                <button class="primary-btn">BOOK NOW</button>
-                <h3>₹2000 <span> <br> Per Night </span> </h3>
-              </div>
+        </section>
+        <!--================ Facilities Area  =================-->
+        
+        <!--================ About History Area  =================-->
+        <section class="about_history_area section_gap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 d_flex align-items-center">
+                        <div class="about_content ">
+                            <h2 class="title title_color">About Us <br>Our History<br>Mission & Vision</h2>
+                            <p>Hotel Classic Inn at Jaigaon, Jalpaiguri is a reliable name in the hotel industry as their aim is to deliver the best experience to their customers. This has helped them to build up a loyal customer base. They started their journey in 2017 and ever since, they have ensured that the customer remains at the centre of their business operations and philosophy. As they are located exactly at Near Indian Overseas Bank, M G Road, Jaigaon-736182, Jalpaiguri, West Bengal, India, it is easy to locate Hotel Classic Inn on the map. For any kind of assistance or questions, it is best to contact them directly during their business hours.</p>
+                            <a href="#" class="button_hover theme_btn_two">Request Custom Price</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <img class="img-fluid" src="image/about_bg.jpg" alt="img">
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="items">
-            <div class="image">
-              <img src="Images/imagenotfound.png" alt="">
+        </section>
+        <!--================ About History Area  =================-->
+        
+        <!--================ Testimonial Area  =================-->
+        <section class="testimonial_area section_gap">
+            <div class="container">
+                <div class="section_title text-center">
+                    <h2 class="title_color">Testimonial from our Clients</h2>
+                    <p>The French Revolution constituted for the conscience of the dominant aristocratic class a fall from </p>
+                </div>
+                <div class="testimonial_slider owl-carousel">
+                    <div class="media testimonial_item">
+                        <img class="rounded-circle" src="image/testtimonial-1.jpg" alt="">
+                        <div class="media-body">
+                            <p>Traveling helps us to take away some time from our daily routined life which we remember for a long time. </p>
+                            <a href="#"><h4 class="sec_h4">Our valued client</h4></a>
+                            <div class="star">
+                                <a href="#"><i class="fa fa-star"></i></a>
+                                <a href="#"><i class="fa fa-star"></i></a>
+                                <a href="#"><i class="fa fa-star"></i></a>
+                                <a href="#"><i class="fa fa-star"></i></a>
+                                <a href="#"><i class="fa fa-star-half-o"></i></a>
+                            </div>
+                        </div>
+                    </div>    
+                    <div class="media testimonial_item">
+                        <img class="rounded-circle" src="image/testtimonial-1.jpg" alt="">
+                        <div class="media-body">
+                            <p>After completion of a tour good time spends to think & share the moments about it. </p>
+                            <a href="#"><h4 class="sec_h4">Our valued client</h4></a>
+                            <div class="star">
+                                <a href="#"><i class="fa fa-star"></i></a>
+                                <a href="#"><i class="fa fa-star"></i></a>
+                                <a href="#"><i class="fa fa-star"></i></a>
+                                <a href="#"><i class="fa fa-star"></i></a>
+                                <a href="#"><i class="fa fa-star-half-o"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media testimonial_item">
+                        <img class="rounded-circle" src="image/testtimonial-1.jpg" alt="">
+                        <div class="media-body">
+                            <p>Travelling helps us to enrich our knowledge without any difficulty. </p>
+                            <a href="#"><h4 class="sec_h4">Our valued client</h4></a>
+                            <div class="star">
+                                <a href="#"><i class="fa fa-star"></i></a>
+                                <a href="#"><i class="fa fa-star"></i></a>
+                                <a href="#"><i class="fa fa-star"></i></a>
+                                <a href="#"><i class="fa fa-star"></i></a>
+                                <a href="#"><i class="fa fa-star-half-o"></i></a>
+                            </div>
+                        </div>
+                    </div>    
+                    <div class="media testimonial_item">
+                        <img class="rounded-circle" src="image/testtimonial-1.jpg" alt="">
+                        <div class="media-body">
+                            <p>In both the times before & after of every tour it is a great pleasure. </p>
+                            <a href="#"><h4 class="sec_h4">Our valued client</h4></a>
+                            <div class="star">
+                                <a href="#"><i class="fa fa-star"></i></a>
+                                <a href="#"><i class="fa fa-star"></i></a>
+                                <a href="#"><i class="fa fa-star"></i></a>
+                                <a href="#"><i class="fa fa-star"></i></a>
+                                <a href="#"><i class="fa fa-star-half-o"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="text">
-              <h2>Delux Rooms</h2>
-              <div class="rate flex">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-              </div>
-              <p>At Hotel Classic Inn adjacent to our neighbouring Country Bhutan.Both Bhutan Gates are just 5 minutes walking distance from our Hotel.
-              </p>
-              <div class="button flex">
-                <button class="primary-btn">BOOK NOW</button>
-                <h3>₹2000 <span> <br> Per Night </span> </h3>
-              </div>
+        </section>
+        <!--================ Testimonial Area  =================-->
+        
+        <!--================ Latest Blog Area  =================-->
+        <section class="latest_blog_area section_gap">
+            <div class="container">
+                <div class="section_title text-center">
+                    <h2 class="title_color">latest posts from blog</h2>
+                    <p>The French Revolution constituted for the conscience of the dominant aristocratic class a fall from </p>
+                </div>
+                <div class="row mb_30">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-recent-blog-post">
+                            <div class="thumb">
+                                <img class="img-fluid" src="image/blog/blog-1.jpg" alt="post">
+                            </div>
+                            <div class="details">
+                                <div class="tags">
+                                    <a href="#" class="button_hover tag_btn">Travel</a>
+                                    <a href="#" class="button_hover tag_btn">Life Style</a>
+                                </div>
+                                <a href="#"><h4 class="sec_h4">Low Cost Advertising</h4></a>
+                                <p>Acres of Diamonds… you’ve read the famous story, or at least had it related to you. A farmer.</p>
+                                <h6 class="date title_color">31st January,2018</h6>
+                            </div>	
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-recent-blog-post">
+                            <div class="thumb">
+                                <img class="img-fluid" src="image/blog/blog-2.jpg" alt="post">
+                            </div>
+                            <div class="details">
+                                <div class="tags">
+                                    <a href="#" class="button_hover tag_btn">Travel</a>
+                                    <a href="#" class="button_hover tag_btn">Life Style</a>
+                                </div>
+                                <a href="#"><h4 class="sec_h4">Creative Outdoor Ads</h4></a>
+                                <p>Self-doubt and fear interfere with our ability to achieve or set goals. Self-doubt and fear are</p>
+                                <h6 class="date title_color">31st January,2018</h6>
+                            </div>	
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-recent-blog-post">
+                            <div class="thumb">
+                                <img class="img-fluid" src="image/blog/blog-3.jpg" alt="post">
+                            </div>
+                            <div class="details">
+                                <div class="tags">
+                                    <a href="#" class="button_hover tag_btn">Travel</a>
+                                    <a href="#" class="button_hover tag_btn">Life Style</a>
+                                </div>
+                                <a href="#"><h4 class="sec_h4">It S Classified How To Utilize Free</h4></a>
+                                <p>Why do you want to motivate yourself? Actually, just answering that question fully can </p>
+                                <h6 class="date title_color">31st January,2018</h6>
+                            </div>	
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="items">
-            <div class="image">
-              <img src="Images/imagenotfound.png" alt="">
+        </section>
+        <!--================ Recent Area  =================-->
+        
+        <!--================ start footer Area  =================-->	
+        <footer class="footer-area section_gap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3  col-md-6 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h6 class="footer_title">About Agency</h6>
+                            <p>The world has become so fast paced that people don’t want to stand by reading a page of information, they would much rather look at a presentation and understand the message. It has come to a point </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h6 class="footer_title">Navigation Links</h6>
+                            <div class="row">
+                                <div class="col-4">
+                                    <ul class="list_style">
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">Feature</a></li>
+                                        <li><a href="#">Services</a></li>
+                                        <li><a href="#">Portfolio</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-4">
+                                    <ul class="list_style">
+                                        <li><a href="#">Team</a></li>
+                                        <li><a href="#">Pricing</a></li>
+                                        <li><a href="#">Blog</a></li>
+                                        <li><a href="#">Contact</a></li>
+                                    </ul>
+                                </div>										
+                            </div>							
+                        </div>
+                    </div>							
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h6 class="footer_title">Newsletter</h6>
+                            <p>For business professionals caught between high OEM price and mediocre print and graphic output, </p>		
+                            <div id="mc_embed_signup">
+                                <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative">
+                                    <div class="input-group d-flex flex-row">
+                                        <input name="EMAIL" placeholder="Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '" required="" type="email">
+                                        <button class="btn sub-btn"><span class="lnr lnr-location"></span></button>		
+                                    </div>									
+                                    <div class="mt-10 info"></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="single-footer-widget instafeed">
+                            <h6 class="footer_title">InstaFeed</h6>
+                            <ul class="list_style instafeed d-flex flex-wrap">
+                                <li><img src="image/instagram/Image-01.jpg" alt=""></li>
+                                <li><img src="image/instagram/Image-02.jpg" alt=""></li>
+                                <li><img src="image/instagram/Image-03.jpg" alt=""></li>
+                                <li><img src="image/instagram/Image-04.jpg" alt=""></li>
+                                <li><img src="image/instagram/Image-05.jpg" alt=""></li>
+                                <li><img src="image/instagram/Image-06.jpg" alt=""></li>
+                                <li><img src="image/instagram/Image-07.jpg" alt=""></li>
+                                <li><img src="image/instagram/Image-08.jpg" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>						
+                </div>
+                <div class="border_line"></div>
+                <div class="row footer-bottom d-flex justify-content-between align-items-center">
+                    <p class="col-lg-8 col-sm-12 footer-text m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> Hotel Classic Inn. Designed <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#" target="_blank">ONUS</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                    <div class="col-lg-4 col-sm-12 footer-social">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-dribbble"></i></a>
+                        <a href="#"><i class="fa fa-behance"></i></a>
+                    </div>
+                </div>
             </div>
-            <div class="text">
-              <h2>Super Luxury Rooms</h2>
-              <div class="rate flex">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-              </div>
-              <p>At Hotel Classic Inn adjacent to our neighbouring Country Bhutan.Both Bhutan Gates are just 5 minutes walking distance from our Hotel.
-              </p>
-              <div class="button flex">
-                <button class="primary-btn">BOOK NOW</button>
-                <h3>₹2000 <span> <br> Per Night </span> </h3>
-              </div>
-            </div>
-          </div>
-          <div class="items">
-            <div class="image">
-              <img src="Images/imagenotfound.png" alt="">
-            </div>
-            <div class="text">
-              <h2>Luxury Rooms</h2>
-              <div class="rate flex">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-              </div>
-              <p>At Hotel Classic Inn adjacent to our neighbouring Country Bhutan.Both Bhutan Gates are just 5 minutes walking distance from our Hotel.
-              </p>
-              <div class="button flex">
-                <button class="primary-btn">BOOK NOW</button>
-                <h3>₹2000 <span> <br> Per Night </span> </h3>
-              </div>
-            </div>
-          </div>
-          <div class="items">
-            <div class="image">
-              <img src="Images/imagenotfound.png" alt="">
-            </div>
-            <div class="text">
-              <h2>Delux Rooms</h2>
-              <div class="rate flex">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-              </div>
-              <p>At Hotel Classic Inn adjacent to our neighbouring Country Bhutan.Both Bhutan Gates are just 5 minutes walking distance from our Hotel.
-              </p>
-              <div class="button flex">
-                <button class="primary-btn">BOOK NOW</button>
-                <h3>₹2000 <span> <br> Per Night </span> </h3>
-              </div>
-            </div>
-          </div>
-          <div class="items">
-            <div class="image">
-              <img src="Images/imagenotfound.png" alt="">
-            </div>
-            <div class="text">
-              <h2>Super Luxury Rooms</h2>
-              <div class="rate flex">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-              </div>
-              <p>At Hotel Classic Inn adjacent to our neighbouring Country Bhutan.Both Bhutan Gates are just 5 minutes walking distance from our Hotel.
-              </p>
-              <div class="button flex">
-                <button class="primary-btn">BOOK NOW</button>
-                <h3>₹2000 <span> <br> Per Night </span> </h3>
-              </div>
-            </div>
-          </div>
-          <div class="items">
-            <div class="image">
-              <img src="Images/imagenotfound.png" alt="">
-            </div>
-            <div class="text">
-              <h2>Luxury Rooms</h2>
-              <div class="rate flex">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-              </div>
-              <p>At Hotel Classic Inn adjacent to our neighbouring Country Bhutan.Both Bhutan Gates are just 5 minutes walking distance from our Hotel.
-              </p>
-              <div class="button flex">
-                <button class="primary-btn">BOOK NOW</button>
-                <h3>₹2000 <span> <br> Per Night </span> </h3>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <script>
-    $('.owl-carousel1').owlCarousel({
-      loop: true,
-      margin: 40,
-      nav: true,
-      dots: false,
-      navText: ["<i class = 'fa fa-chevron-left'></i>", "<i class = 'fa fa-chevron-right'></i>"],
-      responsive: {
-        0: {
-          items: 1
-        },
-        768: {
-          items: 2,
-          margin: 10,
-        },
-        1000: {
-          items: 3
-        }
-      }
-    })
-  </script>
-
-
-
-  <section class="gallery">
-    <div class="container top">
-      <div class="heading">
-        <h1>PHOTOS</h1>
-        <h2>Our Gallery</h2>
-        <p>Overall vision of our Indoor & Outdoor 
-      </div>
-    </div>
-
-    <div class="content mtop">
-      <div class="owl-carousel owl-carousel1 owl-theme">
-        <div class="items">
-          <div class="img">
-            <img src="Images/imagenotfound.png" alt="">
-          </div>
-          <div class="overlay">
-            <span class="fa fa-plus"> </span>
-            <h3>Photo Title Here.</h3>
-          </div>
-        </div>
-        <div class="items">
-          <div class="img">
-            <img src="Images/imagenotfound.png" alt="">
-          </div>
-          <div class="overlay">
-            <span class="fa fa-plus"> </span>
-            <h3>Photo Title Here.</h3>
-          </div>
-        </div>
-        <div class="items">
-          <div class="img">
-            <img src="Images/imagenotfound.png" alt="">
-          </div>
-          <div class="overlay">
-            <span class="fa fa-plus"> </span>
-            <h3>Photo Title Here.</h3>
-          </div>
-        </div>
-        <div class="items">
-          <div class="img">
-            <img src="Images/imagenotfound.png" alt="">
-          </div>
-          <div class="overlay">
-            <span class="fa fa-plus"> </span>
-            <h3>Photo Title Here.</h3>
-          </div>
-        </div>
-        <div class="items">
-          <div class="img">
-            <img src="Images/imagenotfound.png" alt="">
-          </div>
-          <div class="overlay">
-            <span class="fa fa-plus"> </span>
-            <h3>Photo Title Here.</h3>
-          </div>
-        </div>
-        <div class="items">
-          <div class="img">
-            <img src="Images/imagenotfound.png" alt="">
-          </div>
-          <div class="overlay">
-            <span class="fa fa-plus"> </span>
-            <h3>Photo Title Here.</h3>
-          </div>
-        </div>
-        <div class="items">
-          <div class="img">
-            <img src="Images/imagenotfound.png" alt="">
-          </div>
-          <div class="overlay">
-            <span class="fa fa-plus"> </span>
-            <h3>Photo Title Here.</h3>
-          </div>
-        </div>
-        <div class="items">
-          <div class="img">
-            <img src="Images/imagenotfound.png" alt="">
-          </div>
-          <div class="overlay">
-            <span class="fa fa-plus"> </span>
-            <h3>Photo Title Here.</h3>
-          </div>
-        </div>
-        <div class="items">
-          <div class="img">
-            <img src="Images/imagenotfound.png" alt="">
-          </div>
-          <div class="overlay">
-            <span class="fa fa-plus"> </span>
-            <h3>Photo Title Here.</h3>
-          </div>
-        </div>
-        <div class="items">
-          <div class="img">
-            <img src="Images/imagenotfound.png" alt="">
-          </div>
-          <div class="overlay">
-            <span class="fa fa-plus"> </span>
-            <h3>Photo Title Here.</h3>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <script>
-    $('.owl-carousel1').owlCarousel({
-      loop: true,
-      margin: 0,
-      nav: true,
-      dots: false,
-      autoplay: true,
-      autoplayTimeout: 1000,
-      autoplayHoverPause: true,
-      navText: ["<i class = 'fa fa-chevron-left'></i>", "<i class = 'fa fa-chevron-right'></i>"],
-      responsive: {
-        0: {
-          items: 1
-        },
-        768: {
-          items: 4,
-        },
-        1000: {
-          items: 6
-        }
-      }
-    })
-  </script>
-
-
-  <section class="services top">
-    <div class="container">
-      <div class="heading">
-        <h1>SERVICES</h1>
-        <h2>Our Services</h2>
-        <p>Services we provide to our valued customer
-      </div>
-
-
-      <div class="content flex_space">
-        <div class="left grid2">
-          <div class="box">
-            <div class="text">
-              <i class="fa-solid fa-champagne-glasses"></i>
-              <h3>Inhouse Bar</h3>
-            </div>
-          </div>
-          <div class="box">
-            <div class="text">
-              <i class="fa-solid fa-person-biking"></i>
-              <h3>Fintness</h3>
-            </div>
-          </div>
-          <div class="box">
-            <div class="text">
-              <i class="fa-solid fa-utensils"></i>
-              <h3>Inhouse Restaurant</h3>
-            </div>
-          </div>
-          <div class="box">
-            <div class="text">
-              <i class="fa-solid fa-spa"></i>
-              <h3>Beauty Spa</h3>
-            </div>
-          </div>
-        </div>
-        <div class="right">
-          <img src="Images/imagenotfound.png" alt="">
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
-
-  <section class="Customer top">
-    <div class="container">
-      <div class="owl-carousel owl-carousel2 owl-theme">
-        <div class="item">
-          <i class="fa-solid fa-quote-right"></i>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <h3>Julia Robertson</h3>
-          <label>Julia Robertson</label>
-        </div>
-        <div class="item">
-          <i class="fa-solid fa-quote-right"></i>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <h3>Julia Robertson</h3>
-          <label>Julia Robertson</label>
-        </div>
-        <div class="item">
-          <i class="fa-solid fa-quote-right"></i>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <h3>Julia Robertson</h3>
-          <label>Julia Robertson</label>
-        </div>
-      </div>
-    </div>
-  </section>
-  <script>
-    $('.owl-carousel2').owlCarousel({
-      loop: true,
-      margin: 0,
-      nav: false,
-      dots: true,
-      responsive: {
-        0: {
-          items: 1
-        },
-        768: {
-          items: 1,
-        },
-        1000: {
-          items: 1
-        }
-      }
-    })
-  </script>
-
-
-
-  <section class="news top rooms">
-    <div class="container">
-      <div class="heading">
-        <h1>NEWS</h1>
-        <h2>Our News</h2>
-        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-      </div>
-
-
-      <div class="content flex">
-        <div class="left grid2">
-          <div class="items">
-            <div class="image">
-              <img src="Images/imagenotfound.png" alt="">
-            </div>
-            <div class="text">
-              <h2>Finibus bonorum malorm.</h2>
-              <div class="admin flex">
-                <i class="fa fa-user"></i>
-                <label>Admin</label>
-                <i class="fa fa-heart"></i>
-                <label>500</label>
-                <i class="fa fa-comments"></i>
-              </div>
-              <p>At Hotel Classic Inn adjacent to our neighbouring Country Bhutan.Both Bhutan Gates are just 5 minutes walking distance from our Hotel.</p>
-            </div>
-          </div>
-          <div class="items">
-            <div class="image">
-              <img src="Images/imagenotfound.png" alt="">
-            </div>
-            <div class="text">
-              <h2>Finibus bonorum malorm.</h2>
-              <div class="admin flex">
-                <i class="fa fa-user"></i>
-                <label>Admin</label>
-                <i class="fa fa-heart"></i>
-                <label>500</label>
-                <i class="fa fa-comments"></i>
-              </div>
-              <p>At Hotel Classic Inn adjacent to our neighbouring Country Bhutan.Both Bhutan Gates are just 5 minutes walking distance from our Hotel.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="right">
-          <div class="box flex">
-            <div class="img">
-              <img src="Images/imagenotfound.png" alt="">
-            </div>
-            <div class="stext">
-              <h2>Etiam Vel Nequ</h2>
-              <p>At Hotel Classic Inn adjacent to our neighbouring Country Bhutan.Both Bhutan Gates are just 5 minutes walking distance from our Hotel.
-              </p>
-            </div>
-          </div>
-          <div class="box flex">
-            <div class="img">
-              <img src="Images/imagenotfound.png" alt="">
-            </div>
-            <div class="stext">
-              <h2>Etiam Vel Nequ</h2>
-              <p>At Hotel Classic Inn adjacent to our neighbouring Country Bhutan.Both Bhutan Gates are just 5 minutes walking distance from our Hotel.
-              </p>
-            </div>
-          </div>
-          <div class="box flex">
-            <div class="img">
-              <img src="Images/imagenotfound.png" alt="">
-            </div>
-            <div class="stext">
-              <h2>Etiam Vel Nequ</h2>
-              <p>At Hotel Classic Inn adjacent to our neighbouring Country Bhutan.Both Bhutan Gates are just 5 minutes walking distance from our Hotel.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <section class="newsletter mtop">
-    <div class="container flex_space">
-      <h1>Subscribe to Our Newsletter</h1>
-      <input type="text" placeholder="Your Email">
-      <input type="text" value="Subscribe">
-    </div>
-  </section>
-
-
-  <footer>
-    <div class="container grid">
-      <div class="box">
-        <img src="Images/logo-2.png" alt="">
-        <p>Hotel Classic Inn at Jaigaon, Jalpaiguri is a reliable name in the hotel industry as their aim is to deliver the best experience to their customers. This has helped them to build up a loyal customer base. They started their journey in 2017 and ever since, they have ensured that the customer remains at the centre of their business operations and philosophy. As they are located exactly at Near Indian Overseas Bank, M G Road, Jaigaon-736182, Jalpaiguri, West Bengal, India, it is easy to locate Hotel Classic Inn on the map.
-          For any kind of assistance or questions, it is best to contact them directly during their business hours.</p>
-
-        <div class="icon">
-          <i class="fa fa-facebook-f"></i>
-          <i class="fa fa-instagram"></i>
-          <i class="fa fa-twitter"></i>
-          <i class="fa fa-youtube"></i>
-        </div>
-      </div>
-
-      <div class="box">
-        <h2>Links</h2>
-        <ul>
-          <li>Company History</li>
-          <li>About Us</li>
-          <li>Contact Us</li>
-          <li>Services</li>
-          <li>Privacy Policy</li>
-        </ul>
-      </div>
-
-      <div class="box">
-        <h2>Contact Us</h2>
-        <p>At Hotel Classic Inn adjacent to our neighbouring Country Bhutan.Both Bhutan Gates are just 5 minutes walking distance from our Hotel.
-        </p>
-        <i class="fa fa-location-dot"></i>Location<br>
-        <label>M G Road, Jaigaon, Jalpaiguri - 736182, Near Indian Overseas Bank (Map) </label> <br>
-        <i class="fa fa-phone"></i>Contact<br>
-        <label>(03566) - 264149, 264150, 264151,(+91)8327391295, 8327391296, 9733330489, 9593964601</label> <br>
-        <i class="fa fa-envelope"></i>Mail<br>
-        <label>classicinnhotel@gmail.com</label> <br>
-      </div>
-    </div>
-  </footer>
-
-  <div class="note">
-    <p class="container">This is a Demo site of Hotel Classic Inn</p>
-  </div>
-
-  <div class="legal">
-    <p class="container">Copyright © 2022, Hotel Classic Inn. Designed by ONUS</p>
-  </div>
-<script src="https://kit.fontawesome.com/032d11eac3.js" crossorigin="anonymous"></script>
-</body>
-
+        </footer>
+		<!--================ End footer Area  =================-->
+        
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+        <script src="js/jquery.ajaxchimp.min.js"></script>
+        <script src="js/mail-script.js"></script>
+        <script src="vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.js"></script>
+        <script src="vendors/nice-select/js/jquery.nice-select.js"></script>
+        <script src="js/mail-script.js"></script>
+        <script src="js/stellar.js"></script>
+        <script src="vendors/lightbox/simpleLightbox.min.js"></script>
+        <script src="js/custom.js"></script>
+    </body>
 </html>
