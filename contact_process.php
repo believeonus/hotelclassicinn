@@ -1,6 +1,6 @@
 <?php
 
-    $to = "animikhdasofficial@gmail.com";
+    $to = "info.to.believeonus@gmail.com";
     $from = $_REQUEST['gmail'];
     $name = $_REQUEST['name'];
     $subject = $_REQUEST['subject'];
@@ -34,4 +34,49 @@
 
     $send = mail($to, $subject, $body, $headers);
 
+
+use PHPMailer\PHPMailer\PHPMailer;
+
+require 'phpmailer/src/Exception.php';
+require 'phpmailer/src/PHPMailer.php';
+require 'phpmailer/src/SMTP.php';
+
+$mail=new PHPMailer(true);
+
+$alert = '';
+
+if(isset($_POST["send"])){
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $subject = $_POST['subject'];
+    $message = $_POST['message'];
+
+    try{
+        $mail->isSMTP();
+        $mail->Host='smtp.gmail.com';
+        $mail->SMTPAuth=true;
+        $mail->Username ='info.to.believeonus@gmail.com';
+        $mail->Password ='jjskybebqfilvqbf';
+        $mail->SMTPSecure='tls';
+        $mail->Port=587;
+
+        $mail->setFrom('info.to.believeonus@gmail.com');
+        $mail->addAddress('arupchowdhuryjal@gmail.com');
+        
+        $mail->isHTML(true);
+        $mail->Subject = 'Message Received from Contact:'.$name;
+        $mail->Body = "Name : $name <br>Email : $email <br>Subject : $subject <br>Message : $message";
+
+        $mail->send();
+        echo"
+
+        <script>
+        
+        alert('Sent Successfully');
+        document.location.href = 'lol.php';
+        </script>
+        ";
+    }catch(Exception $e){
+
+    }
 ?>
