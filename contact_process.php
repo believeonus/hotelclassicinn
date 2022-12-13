@@ -1,6 +1,6 @@
 <?php
 
-    $to = "info.to.believeonus@gmail.com";
+    $to = "mail.form.onus@gmail.com";
     $from = $_REQUEST['gmail'];
     $name = $_REQUEST['name'];
     $subject = $_REQUEST['subject'];
@@ -55,13 +55,13 @@ if(isset($_POST["send"])){
         $mail->isSMTP();
         $mail->Host='smtp.gmail.com';
         $mail->SMTPAuth=true;
-        $mail->Username ='info.to.believeonus@gmail.com';
-        $mail->Password ='jjskybebqfilvqbf';
+        $mail->Username ='mail.form.onus@gmail.com';
+        $mail->Password ='jlbfgruqzplgfnda';
         $mail->SMTPSecure='tls';
         $mail->Port=587;
 
-        $mail->setFrom('info.to.believeonus@gmail.com');
-        $mail->addAddress('arupchowdhuryjal@gmail.com');
+        $mail->setFrom('mail.form.onus@gmail.com');
+        $mail->addAddress('animikhdasofficial@gmail.com');
         
         $mail->isHTML(true);
         $mail->Subject = 'Message Received from Contact:'.$name;
