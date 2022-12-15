@@ -1,43 +1,5 @@
 <?php
-<<<<<<< HEAD
-=======
 
-    $to = "mail.form.onus@gmail.com";
-    $from = $_REQUEST['gmail'];
-    $name = $_REQUEST['name'];
-    $subject = $_REQUEST['subject'];
-    $number = $_REQUEST['number'];
-    $cmessage = $_REQUEST['message'];
-
-    $headers = "From: $from";
-	$headers = "From: " . $from . "\r\n";
-	$headers .= "Reply-To: ". $from . "\r\n";
-	$headers .= "MIME-Version: 1.0\r\n";
-	$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
-
-    $subject = "You have a message from your Cake Template.";
-
-    $logo = 'http://wethemez.com/test-html/consultplus/img/logo-black.png';
-    $link = '#';
-
-	$body = "<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><title>Express Mail</title></head><body>";
-	$body .= "<table style='width: 100%;'>";
-	$body .= "<thead style='text-align: center;'><tr><td style='border:none;' colspan='2'>";
-	$body .= "<a href='{$link}'><img src='{$logo}' alt=''></a><br><br>";
-	$body .= "</td></tr></thead><tbody><tr>";
-	$body .= "<td style='border:none;'><strong>Name:</strong> {$name}</td>";
-	$body .= "<td style='border:none;'><strong>Email:</strong> {$from}</td>";
-	$body .= "</tr>";
-	$body .= "<tr><td style='border:none;'><strong>Subject:</strong> {$csubject}</td></tr>";
-	$body .= "<tr><td></td></tr>";
-	$body .= "<tr><td colspan='2' style='border:none;'>{$cmessage}</td></tr>";
-	$body .= "</tbody></table>";
-	$body .= "</body></html>";
-
-    $send = mail($to, $subject, $body, $headers);
-
-
->>>>>>> efdf39fe9bc6fb697b6499bd776b2c03a86843fa
 use PHPMailer\PHPMailer\PHPMailer;
 
 require 'phpmailer/src/Exception.php';
@@ -58,21 +20,21 @@ if(isset($_POST["send"])){
         $mail->isSMTP();
         $mail->Host='smtp.gmail.com';
         $mail->SMTPAuth=true;
-<<<<<<< HEAD
+
         $mail->Username ='info.from.onus@gmail.com';
         $mail->Password ='gidmeeabzsqtefbg';
         $mail->SMTPSecure='tls';
         $mail->Port=587;
 
         $mail->setFrom('info.from.onus@gmail.com');
-=======
+
         $mail->Username ='mail.form.onus@gmail.com';
         $mail->Password ='jlbfgruqzplgfnda';
         $mail->SMTPSecure='tls';
         $mail->Port=587;
 
         $mail->setFrom('mail.form.onus@gmail.com');
->>>>>>> efdf39fe9bc6fb697b6499bd776b2c03a86843fa
+
         $mail->addAddress('animikhdasofficial@gmail.com');
         
         $mail->isHTML(true);
