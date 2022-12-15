@@ -1,0 +1,544 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="image/icon.png" type="image/png">
+        <title>Hotel Classic Inn</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="vendors/linericon/style.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.css">
+        <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+        <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/a2ff1f3788.js" crossorigin="anonymous"></script>
+        <!-- main css -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+    </head>
+    <body>
+        <!--================Header Area =================-->
+        <header class="header_area">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <a class="navbar-brand logo_h" href="index.html"><img src="image/Logo.png" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav menu_nav ml-auto">
+                            <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li> 
+                            <li class="nav-item"><a class="nav-link" href="about.html">About us</a></li>
+                            <li class="nav-item"><a class="nav-link" href="accomodation.html">Accomodation</a></li>
+                            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        </ul>
+                    </div> 
+                </nav>
+            </div>
+        </header>
+        <!--================Header Area =================-->
+        
+        <!--================Banner Area =================-->
+        <section class="banner_area">
+            <div class="booking_table d_flex align-items-center">
+            	<div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
+				<div class="container">
+					<div class="banner_content text-center">
+						<h6>Away from monotonous life</h6>
+						<h2>Relax Your Mind</h2>
+						<p>If you are looking for a peaceful vaccation don't be confused, visit our place & it is confirmed<br> that you will enjoy the vaccation without any stress.</p>
+						<a href="accomodation.html" class="btn theme_btn button_hover">Get Started</a>
+					</div>
+				</div>
+            </div>
+            <div class="hotel_booking_area position">
+                <div class="container">
+                    <div class="hotel_booking_table">
+                        <div class="col-md-3">
+                            <h2>Book<br> Your Room</h2>
+                        </div>
+                    <form action="contact_process.php" method="post"></form>
+                        <div class="col-md-9">
+                                <div class="boking_table">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="book_tabel_item">
+                                        <div class="form-group">
+                                            <div class='input-group date' id='datetimepicker11'>
+                                                <input type='text' class="form-control" placeholder="Arrival Date"/>
+                                                <span class="input-group-addon">
+                                                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="input-group">
+                                            <select class="wide" name="value1" id="textone" required>
+                                                <option data-display="Adult">Adult</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="3">4</option>
+                                                <option value="3">5+</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class='input-group date' id="name" name="name">
+                                                <input type='text' class="form-control" placeholder="Enter your name" required/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="book_tabel_item">
+                                        <div class="form-group">
+                                            <div class='input-group date' id='datetimepicker1'>
+                                                <input type='text' class="form-control" placeholder="Departure Date" required/>
+                                                <span class="input-group-addon">
+                                                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="input-group">
+                                            <select class="wide" name="value2" id="texttwo" required>
+                                                <option data-display="Child">Child</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="3">4</option>
+                                                <option value="3">5+</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class='input-group date' id="email" name="email">
+                                                <input type='text' class="form-control" placeholder="Enter email address" required/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="book_tabel_item">
+                                        <div class="input-group">
+                                            <select class="wide" required>
+                                                <option data-display="Room type">Room type</option>
+                                                <option value="1">Standard Room(NAC)Double</option>
+                                                <option value="2">Deluxe Room AC Double</option>
+                                                <option value="3">Triple Deluxe AC</option>
+                                                <option value="3">Executive Deluxe Double</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class='input-group date' id='Test'>
+                                                <input type='text' id="result" name="result" class="form-control" placeholder="Number of Members" required/>
+                                            </div>
+                                        </div>
+                                        <button type="submit"  name="send" class="book_now_btn button_hover">Book Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--================Banner Area =================-->
+        
+        <!--================ Accomodation Area  =================-->
+        <section class="accomodation_area section_gap">
+            <div class="container">
+                <div class="section_title text-center">
+                    <h2 class="title_color">Hotel Accomodation</h2>
+                    <p>We all live in an age that belongs to the young at heart. Life that is becoming extremely fast, </p>
+                </div>
+                <div class="row mb_30">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="accomodation_item text-center">
+                            <div class="hotel_img">
+                                <img src="image/room1.png" alt="">
+                                <a href="accomodation.html" class="btn theme_btn button_hover">Book Now</a>
+                            </div>
+                            <a href="#"><h4 class="sec_h4">Standard Room(NAC)Double</h4></a>
+                            <h5>₹1350.00<small>/night</small></h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="accomodation_item text-center">
+                            <div class="hotel_img">
+                                <img src="image/room2.png" alt="">
+                                <a href="accomodation.html" class="btn theme_btn button_hover">Book Now</a>
+                            </div>
+                            <a href="#"><h4 class="sec_h4">Deluxe Room</h4></a>
+                            <a href="#"><h4 class="sec_h4">AC Double</h4></a>
+                            <h5>₹1950.00<small>/night</small></h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="accomodation_item text-center">
+                            <div class="hotel_img">
+                                <img src="image/room3.png" alt="">
+                                <a href="accomodation.html" class="btn theme_btn button_hover">Book Now</a>
+                            </div>
+                            <a href="#"><h4 class="sec_h4">Triple Deluxe</h4></a>
+                            <a href="#"><h4 class="sec_h4">AC</h4></a>
+                            <h5>₹2500.00<small>/night</small></h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="accomodation_item text-center">
+                            <div class="hotel_img">
+                                <img src="image/room4.png" alt="">
+                                <a href="accomodation.html" class="btn theme_btn button_hover">Book Now</a>
+                            </div>
+                            <a href="#"><h4 class="sec_h4">Executive Deluxe</h4></a>
+                            <a href="#"><h4 class="sec_h4">Double</h4></a>
+                            <h5>₹3000.00<small>/night</small></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--================ Accomodation Area  =================-->
+        
+        <!--================ Facilities Area  =================-->
+        <section class="facilities_area section_gap">
+            <div class="overlay bg-parallax" data-stellar-ratio="0.8" data-stellar-vertical-offset="0" data-background="">  
+            </div>
+            <div class="container">
+                <div class="section_title text-center">
+                    <h2 class="title_w">Royal Facilities</h2>
+                    <p>Who are in extremely love with eco friendly system.</p>
+                </div>
+                <div class="row mb_30">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="facilities_item">
+                            <h4 class="sec_h4"><i class="lnr lnr-dinner"></i>Restaurant</h4>
+                            <p>To serve good quality of food with some special presentation is our moto.</p>
+                            <p>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="facilities_item">
+                            <h4 class="sec_h4"><i class="fa-solid fa-wine-glass"></i>Bar</h4>
+                            <p>We have a well equiped Bar.</p>
+                            <p>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ </p>
+                            <p>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="facilities_item">
+                            <h4 class="sec_h4"><i class="fa-solid fa-car"></i>Rent a Car</h4>
+                            <p>Car on rent is available at your doorstep at an reasonable price.</p>
+                            <p>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="facilities_item">
+                            <h4 class="sec_h4"><i class="fa-solid fa-house"></i>Banquet</h4>
+                            <p>For all kinds of Programs we have a extraordinary Banquet with every facility as per requirement.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="facilities_item">
+                            <h4 class="sec_h4"><i class="fa-solid fa-bed"></i>Rooms</h4>
+                            <p>We have different types of rooms to accomodate different types of Guests.</p>
+                            <p>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="facilities_item">
+                            <h4 class="sec_h4"><i class="fa-solid fa-wine-bottle"></i>Off Shop</h4>
+                            <p>A updated Off Shop is attached to our Hotel.</p>
+                             <p>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="facilities_item">
+                            <h4 class="sec_h4"><i class="fa-solid fa-wifi"></i>Wifi</h4>
+                            <p>For all kinds of Programs we have a extraordinary Banquet with every facility as per requirement.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="facilities_item">
+                            <h4 class="sec_h4"><i class="fa-solid fa-shirt"></i>Laundry</h4>
+                            <p>We have different types of rooms to accomodate different types of Guests.</p>
+                            <p>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="facilities_item">
+                            <h4 class="sec_h4"><i class="fa-solid fa-lock"></i>Safe Locker</h4>
+                            <p>A updated Off Shop is attached to our Hotel.</p>
+                             <p>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ </p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <!--================ Facilities Area  =================-->
+        
+        <!--================ About History Area  =================-->
+        <section class="about_history_area section_gap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 d_flex align-items-center">
+                        <div class="about_content ">
+                            <h2 class="title title_color">About Us <br>Our History<br>Mission & Vision</h2>
+                            <p>Hotel Classic Inn at Jaigaon, Jalpaiguri is a reliable name in the hotel industry as their aim is to deliver the best experience to their customers. This has helped them to build up a loyal customer base. They started their journey in 2017 and ever since, they have ensured that the customer remains at the centre of their business operations and philosophy. As they are located exactly at Near Indian Overseas Bank, M G Road, Jaigaon-736182, Jalpaiguri, West Bengal, India, it is easy to locate Hotel Classic Inn on the map. For any kind of assistance or questions, it is best to contact them directly during their business hours.</p>
+                            <a href="contact.html" class="button_hover theme_btn_two">Request Custom Price</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <img class="img-fluid" src="image/banner_bg.jpg" alt="img">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--================ About History Area  =================-->
+        
+        <!--================ Testimonial Area  =================-->
+        <section class="testimonial_area section_gap">
+            <div class="container">
+                <div class="section_title text-center">
+                    <h2 class="title_color">Testimonial from our Clients</h2>
+                    <p>Depends on clients send their comments. </p>
+                </div>
+                <div class="testimonial_slider owl-carousel">
+                    <div class="media testimonial_item">
+                        <img class="rounded-circle" src="image/female.jpg" alt="">
+                        <div class="media-body">
+                            <p>Traveling helps us to take away some time from our daily routined life which we remember for a long time. </p>
+                            <a href="#"><h4 class="sec_h4">Mrs. Rani Chakraborty,Kolkata</h4></a>
+                            <div class="star">
+                                <a href="#"><i class="fa fa-star"></i></a>
+                                <a href="#"><i class="fa fa-star"></i></a>
+                                <a href="#"><i class="fa fa-star"></i></a>
+                                <a href="#"><i class="fa fa-star"></i></a>
+                                <a href="#"><i class="fa fa-star-half-o"></i></a>
+                            </div>
+                        </div>
+                    </div>    
+                    <div class="media testimonial_item">
+                        <img class="rounded-circle" src="image/male.jpg" alt="">
+                        <div class="media-body">
+                            <p>After completion of a tour good time spends to think & share the moments about it. </p>
+                            <a href="#"><h4 class="sec_h4">Mr. Rakesh Agarwal, Delhi</h4></a>
+                            <div class="star">
+                                <a href="#"><i class="fa fa-star"></i></a>
+                                <a href="#"><i class="fa fa-star"></i></a>
+                                <a href="#"><i class="fa fa-star"></i></a>
+                                <a href="#"><i class="fa fa-star"></i></a>
+                                <a href="#"><i class="fa fa-star-half-o"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media testimonial_item">
+                        <img class="rounded-circle" src="image/female.jpg" alt="">
+                        <div class="media-body">
+                            <p>Travelling helps us to enrich our knowledge without any difficulty. </p>
+                            <a href="#"><h4 class="sec_h4">Mrs. Angelo Gomes, Goa</h4></a>
+                            <div class="star">
+                                <a href="#"><i class="fa fa-star"></i></a>
+                                <a href="#"><i class="fa fa-star"></i></a>
+                                <a href="#"><i class="fa fa-star"></i></a>
+                                <a href="#"><i class="fa fa-star"></i></a>
+                                <a href="#"><i class="fa fa-star-half-o"></i></a>
+                            </div>
+                        </div>
+                    </div>    
+                    <div class="media testimonial_item">
+                        <img class="rounded-circle" src="image/male.jpg" alt="">
+                        <div class="media-body">
+                            <p>In both the times before & after of every tour it is a great pleasure. </p>
+                            <a href="#"><h4 class="sec_h4">Mr. Soumen Mukherjee, Patna</h4></a>
+                            <div class="star">
+                                <a href="#"><i class="fa fa-star"></i></a>
+                                <a href="#"><i class="fa fa-star"></i></a>
+                                <a href="#"><i class="fa fa-star"></i></a>
+                                <a href="#"><i class="fa fa-star"></i></a>
+                                <a href="#"><i class="fa fa-star-half-o"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--================ Testimonial Area  =================-->
+        
+        <!--================ Latest Blog Area  =================-->
+        <section class="latest_blog_area section_gap">
+            <div class="container">
+                <div class="section_title text-center">
+                    <h2 class="title_color">latest posts from blog</h2>
+                    <p>As per blogs are posted. </p>
+                </div>
+                <div class="row mb_30">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-recent-blog-post">
+                            <div class="thumb">
+                                <img class="img-fluid" src="image/blog/blog.png" alt="post">
+                            </div>
+                            <div class="details">
+                                <div class="tags">
+                                    <a href="#" class="button_hover tag_btn">Travel</a>
+                                    <a href="#" class="button_hover tag_btn">Life Style</a>
+                                </div>
+                                <a href="#"><h4 class="sec_h4">Add Caption</h4></a>
+                                <p>Sub Titel yet to come.</p>
+                                <h6 class="date title_color">1st November,2022</h6>
+                            </div>	
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-recent-blog-post">
+                            <div class="thumb">
+                                <img class="img-fluid" src="image/blog/blog.png" alt="post">
+                            </div>
+                            <div class="details">
+                                <div class="tags">
+                                    <a href="#" class="button_hover tag_btn">Travel</a>
+                                    <a href="#" class="button_hover tag_btn">Life Style</a>
+                                </div>
+                                <a href="#"><h4 class="sec_h4">Add Caption</h4></a>
+                                <p>Sub Titel yet to come.</p>
+                                <h6 class="date title_color">1st November,2022</h6>
+                            </div>	
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-recent-blog-post">
+                            <div class="thumb">
+                                <img class="img-fluid" src="image/blog/blog.png" alt="post">
+                            </div>
+                            <div class="details">
+                                <div class="tags">
+                                    <a href="#" class="button_hover tag_btn">Travel</a>
+                                    <a href="#" class="button_hover tag_btn">Life Style</a>
+                                </div>
+                                <a href="#"><h4 class="sec_h4">Add Caption</h4></a>
+                                <p>Sub Titel yet to come. </p>
+                                <h6 class="date title_color">1st November,2022</h6>
+                            </div>	
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--================ Recent Area  =================-->
+        
+        <!--================ start footer Area  =================-->	
+        <footer class="footer-area section_gap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3  col-md-6 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h6 class="footer_title">About Agency</h6>
+                            <p>Hotel Classic Inn at Jaigaon, Jalpaiguri is a reliable name in the hotel industry as their aim is to deliver the best experience to their customers. This has helped them to build up a loyal customer base. They started their journey in 2017 and ever since, they have ensured that the customer remains at the centre of their business operations and philosophy. As they are located exactly at Near Indian Overseas Bank, M G Road, Jaigaon-736182, Jalpaiguri, West Bengal, India, it is easy to locate Hotel Classic Inn on the map. For any kind of assistance or questions, it is best to contact them directly during their business hours. </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h6 class="footer_title">Contacts</h6>
+                            <div class="row">
+                                <div class="col-4">
+                                    <ul class="list_style">
+                                        <li><a href="#">(03566)</a></li>
+                                        <li><a href="#">(03566)</a></li>
+                                        <li><a href="#">(03566)</a></li>
+                                        <li><a href="#">(+91)</a></li>
+                                        <li><a href="#">(+91)</a></li>
+                                        <li><a href="#">(+91)</a></li>
+                                        <li><a href="#">(+91)</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-4">
+                                    <ul class="list_style">
+                                        <li><a href="#">-264149</a></li>
+                                        <li><a href="#">-264150</a></li>
+                                        <li><a href="#">-264151</a></li>
+                                        <li><a href="#">-8327391295</a></li>
+                                        <li><a href="#">-8327391296</a></li>
+                                        <li><a href="#">-9733330489</a></li>
+                                        <li><a href="#">-9593964601</a></li>
+                                    </ul>
+                                </div>										
+                            </div>							
+                        </div>
+                    </div>							
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h6 class="footer_title">Address</h6>
+                            <p>M G Road, Jaigaon, Jalpaiguri - 736182, West Bengal, India. Near Indian Overseas Bank (Map) </p>	
+                            <h6 class="footer_title">Mail</h6>
+                            <p>hotelclassicinn3@gmail.com</p>	
+                            <div id="mc_embed_signup">
+                                <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative">
+                                    <div class="input-group d-flex flex-row">
+                                        <input name="EMAIL" placeholder="Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '" required="" type="email">
+                                        <button class="btn sub-btn"><span class="lnr lnr-location"></span></button>		
+                                    </div>									
+                                    <div class="mt-10 info"></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="single-footer-widget instafeed">
+                            <h6 class="footer_title">Local Views</h6>
+                            <ul class="list_style instafeed d-flex flex-wrap">
+                                <li><img src="image/instagram/insta.jpg" alt=""></li>
+                                <li><img src="image/instagram/insta.jpg" alt=""></li>
+                                <li><img src="image/instagram/insta.jpg" alt=""></li>
+                                <li><img src="image/instagram/insta.jpg" alt=""></li>
+                                <li><img src="image/instagram/insta.jpg" alt=""></li>
+                                <li><img src="image/instagram/insta.jpg" alt=""></li>
+                                <li><img src="image/instagram/insta.jpg" alt=""></li>
+                                <li><img src="image/instagram/insta.jpg" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>						
+                </div>
+                <div class="border_line"></div>
+                <div class="row footer-bottom d-flex justify-content-between align-items-center">
+                    <p class="col-lg-8 col-sm-12 footer-text m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> Hotel Classic Inn. Designed <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#" target="_blank">ONUS ( This is a Demo version. Original to publish soon.) </a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                    <div class="col-lg-4 col-sm-12 footer-social">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-dribbble"></i></a>
+                        <a href="#"><i class="fa fa-behance"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+		<!--================ End footer Area  =================-->
+        
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+        <script src="js/jquery.ajaxchimp.min.js"></script>
+        <script src="js/mail-script.js"></script>
+        <script src="vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.js"></script>
+        <script src="vendors/nice-select/js/jquery.nice-select.js"></script>
+        <script src="js/mail-script.js"></script>
+        <script src="js/stellar.js"></script>
+        <script src="vendors/lightbox/simpleLightbox.min.js"></script>
+        <script src="js/custom.js"></script>
+    </body>
+</html>
