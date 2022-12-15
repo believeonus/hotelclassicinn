@@ -14,6 +14,8 @@
         <link rel="stylesheet" href="vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.css">
         <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
         <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/a2ff1f3788.js" crossorigin="anonymous"></script>
         <!-- main css -->
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/responsive.css">
@@ -64,70 +66,86 @@
                         <div class="col-md-3">
                             <h2>Book<br> Your Room</h2>
                         </div>
+                    <form action="contact_process.php" method="post"></form>
                         <div class="col-md-9">
-                            <div class="boking_table">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <div class="book_tabel_item">
-                                            <div class="form-group">
-                                                <div class='input-group date' id='datetimepicker11'>
-                                                    <input type='text' class="form-control" placeholder="Arrival Date"/>
-                                                    <span class="input-group-addon">
-                                                        <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class='input-group date' id='datetimepicker1'>
-                                                    <input type='text' class="form-control" placeholder="Departure Date"/>
-                                                    <span class="input-group-addon">
-                                                        <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                    </span>
-                                                </div>
+                                <div class="boking_table">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="book_tabel_item">
+                                        <div class="form-group">
+                                            <div class='input-group date' id='datetimepicker11'>
+                                                <input type='text' class="form-control" placeholder="Arrival Date"/>
+                                                <span class="input-group-addon">
+                                                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                </span>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="book_tabel_item">
-                                            <div class="input-group">
-                                                <select class="wide">
-                                                    <option data-display="Adult">Adult</option>
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="2">3</option>
-                                                    <option value="2">4</option>
-                                                    <option value="2">5</option>
-                                                </select>
-                                            </div>
-                                            <div class="input-group">
-                                                <select class="wide">
-                                                    <option data-display="Child">Child</option>
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="2">3</option>
-                                                    <option value="2">4</option>
-                                                    <option value="2">5</option>
-                                                </select>
-                                            </div>
+                                        <div class="input-group">
+                                            <select class="wide" name="value1" id="textone" required>
+                                                <option data-display="Adult">Adult</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="3">4</option>
+                                                <option value="3">5+</option>
+                                            </select>
                                         </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="book_tabel_item">
-                                            <div class="input-group">
-                                                <select class="wide">
-                                                    <option data-display="Room Type">Room Type</option>
-                                                    <option value="1">AC SUPER DELUXE</option>
-                                                    <option value="2">AC DELUXE</option>
-                                                    <option value="3">AC ECONOMY</option>
-                                                    <option value="4">BANQUET HALL</option>
-                                                    <option value="5">CONFERENCE HALL</option>
-                                                </select>
+                                        <div class="form-group">
+                                            <div class='input-group date' id="name" name="name">
+                                                <input type='text' class="form-control" placeholder="Enter your name" required/>
                                             </div>
-                                            <a class="book_now_btn button_hover" href="#">Book Now</a>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="col-md-4">
+                                    <div class="book_tabel_item">
+                                        <div class="form-group">
+                                            <div class='input-group date' id='datetimepicker1'>
+                                                <input type='text' class="form-control" placeholder="Departure Date" required/>
+                                                <span class="input-group-addon">
+                                                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="input-group">
+                                            <select class="wide" name="value2" id="texttwo" required>
+                                                <option data-display="Child">Child</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="3">4</option>
+                                                <option value="3">5+</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class='input-group date' id="email" name="email">
+                                                <input type='text' class="form-control" placeholder="Enter email address" required/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="book_tabel_item">
+                                        <div class="input-group">
+                                            <select class="wide" required>
+                                                <option data-display="Room type">Room type</option>
+                                                <option value="1">Standard Room(NAC)Double</option>
+                                                <option value="2">Deluxe Room AC Double</option>
+                                                <option value="3">Triple Deluxe AC</option>
+                                                <option value="3">Executive Deluxe Double</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class='input-group date' id='Test'>
+                                                <input type='text' id="result" name="result" class="form-control" placeholder="Number of Members" required/>
+                                            </div>
+                                        </div>
+                                        <button type="submit"  name="send" class="book_now_btn button_hover">Book Now</button>
+                                    </div>
+                                </div>
                             </div>
+                        </div>
+                    </form>
                         </div>
                     </div>
                 </div>
@@ -210,7 +228,7 @@
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="facilities_item">
-                            <h4 class="sec_h4"><i class="lnr lnr-coffee-cup"></i>Bar</h4>
+                            <h4 class="sec_h4"><i class="fa-solid fa-wine-glass"></i>Bar</h4>
                             <p>We have a well equiped Bar.</p>
                             <p>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ </p>
                             <p>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ </p>
@@ -218,27 +236,48 @@
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="facilities_item">
-                            <h4 class="sec_h4"><i class="lnr lnr-car"></i>Rent a Car</h4>
+                            <h4 class="sec_h4"><i class="fa-solid fa-car"></i>Rent a Car</h4>
                             <p>Car on rent is available at your doorstep at an reasonable price.</p>
                             <p>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ </p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="facilities_item">
-                            <h4 class="sec_h4"><i class="lnr lnr-apartment"></i>Banquet</h4>
+                            <h4 class="sec_h4"><i class="fa-solid fa-house"></i>Banquet</h4>
                             <p>For all kinds of Programs we have a extraordinary Banquet with every facility as per requirement.</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="facilities_item">
-                            <h4 class="sec_h4"><i class="lnr lnr-home"></i>Rooms</h4>
+                            <h4 class="sec_h4"><i class="fa-solid fa-bed"></i>Rooms</h4>
                             <p>We have different types of rooms to accomodate different types of Guests.</p>
                             <p>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ </p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="facilities_item">
-                            <h4 class="sec_h4"><i class="lnr lnr-coffee-cup"></i>Off Shop</h4>
+                            <h4 class="sec_h4"><i class="fa-solid fa-wine-bottle"></i>Off Shop</h4>
+                            <p>A updated Off Shop is attached to our Hotel.</p>
+                             <p>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="facilities_item">
+                            <h4 class="sec_h4"><i class="fa-solid fa-wifi"></i>Wifi</h4>
+                            <p>For all kinds of Programs we have a extraordinary Banquet with every facility as per requirement.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="facilities_item">
+                            <h4 class="sec_h4"><i class="fa-solid fa-shirt"></i>Laundry</h4>
+                            <p>We have different types of rooms to accomodate different types of Guests.</p>
+                            <p>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="facilities_item">
+                            <h4 class="sec_h4"><i class="fa-solid fa-lock"></i>Safe Locker</h4>
                             <p>A updated Off Shop is attached to our Hotel.</p>
                              <p>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ </p>
                         </div>
@@ -261,7 +300,7 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <img class="img-fluid" src="image/about_bg.png" alt="img">
+                        <img class="img-fluid" src="image/banner_bg.jpg" alt="img">
                     </div>
                 </div>
             </div>
